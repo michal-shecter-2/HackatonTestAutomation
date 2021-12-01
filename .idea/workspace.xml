@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5c7f6bef-d51c-4ba7-8968-509bc11907c1" name="Changes" comment="Base">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/extensions/UIActions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/WebPage/LoginPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/WebPage/NewUserPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utilities/DDT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Appium/Appium.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Appium/Base.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Appium/appuimPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Base.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Desktop/Desktop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Electron/Electron.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Extension/AllAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Extension/ApiAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Extension/WebAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/grafanaWeb/FilteringPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/WebPage/FilteringPO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/grafanaWeb/LoginPO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/grafanaWeb/NewUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Selenium/Selenuim.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/CommoOps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/MontesScreenRecorder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Workflow/Appium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflow/Appium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Workflow/Desktop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflow/Desktop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Workflow/Electron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflow/Electron.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Workflow/GrafanaWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflow/GrafanaWeb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/Api.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/DB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DevOps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EventListeners.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Selenium/Grafana.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/db/DBTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="21XVCO7HpXdllz6X9wUqVUTR24k" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../TestAutomation" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.packagesearch.PackageSearchGeneralConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Workflow" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Automation\ness\Hackathon\Hackathon" />
+      <recent name="D:\Automation\ness\Hackathon\Hackathon\src\main\java\PageObjects" />
+      <recent name="D:\לא למחוק\Desktop\ness\Hackathon\Hackathon\src\main\java\PageObjects" />
+      <recent name="D:\לא למחוק\Desktop\ness\Hackathon\Hackathon\src\main\java\PageObjects\grafanaWeb" />
+      <recent name="D:\לא למחוק\Desktop\ness\Hackathon\Hackathon\src\test\java\TestCase" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.D:/Automation/ness/Hackathon/Hackathon/configDesktop.xml">
+    <configuration name="D:/Automation/ness/Hackathon/Hackathon/configDesktop.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Hackathon" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/configDesktop.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="D:/Automation/ness/Hackathon/Hackathon/configWeb.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Hackathon" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/configWeb.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="D:/Automation/ness/Hackathon/Hackathon/src/test/configApi.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Hackathon" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/configApi.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Hackathon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testCase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testCase" />
+      <option name="MAIN_CLASS_NAME" value="testCase.WebTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebTest.test1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Hackathon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testCase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testCase" />
+      <option name="MAIN_CLASS_NAME" value="testCase.WebTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.D:/Automation/ness/Hackathon/Hackathon/configDesktop.xml" />
+        <item itemvalue="TestNG.D:/Automation/ness/Hackathon/Hackathon/configWeb.xml" />
+        <item itemvalue="TestNG.WebTest" />
+        <item itemvalue="TestNG.WebTest.test1" />
+        <item itemvalue="TestNG.D:/Automation/ness/Hackathon/Hackathon/src/test/configApi.xml" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5c7f6bef-d51c-4ba7-8968-509bc11907c1" name="Changes" comment="" />
+      <created>1638087292959</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638087292959</updated>
+    </task>
+    <task id="LOCAL‎00001" summary="infrastructure">
+      <created>1638172348815</created>
+      <option name="number" value="LOCAL‎00001" />
+      <option name="presentableId" value="LOCAL‎00001" />
+      <updated>1638172348816</updated>
+    </task>
+    <task id="LOCAL‎00002" summary="infrastructure_2">
+      <created>1638173192521</created>
+      <option name="number" value="LOCAL‎00002" />
+      <option name="presentableId" value="LOCAL‎00002" />
+      <updated>1638173192521</updated>
+    </task>
+    <task id="LOCAL‎00003" summary="infrastructure_2">
+      <created>1638178011085</created>
+      <option name="number" value="LOCAL‎00003" />
+      <option name="presentableId" value="LOCAL‎00003" />
+      <updated>1638178011085</updated>
+    </task>
+    <task id="LOCAL‎00004" summary="Base">
+      <created>1638180962088</created>
+      <option name="number" value="LOCAL‎00004" />
+      <option name="presentableId" value="LOCAL‎00004" />
+      <updated>1638180962088</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="infrastructure" />
+    <MESSAGE value="infrastructure_2" />
+    <MESSAGE value="Base" />
+    <option name="LAST_COMMIT_MESSAGE" value="Base" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/testCase/ElectronTest.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

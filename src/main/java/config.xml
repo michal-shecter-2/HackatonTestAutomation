@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Environment>
+    <Environment>PC</Environment>
+    <Application>MYSQL</Application>
+    <ApplicationDescription>my sql database</ApplicationDescription>
+    <URL>jdbc:derby:ConnectingCreatingJavaDB;create=true</URL>
+    <User>root</User>
+    <Password>123456</Password>
+    <TableName>grafana</TableName>
+    <Driver>org.apache.derby.jdbc.EmbeddedDriver</Driver>
+    <ApplicationVersion>8.6</ApplicationVersion>
+</Environment>

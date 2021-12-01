@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="mySuite" parallel="false">
+    <listeners>
+        <listener class-name="utilities.Listener"/>
+    </listeners>
+    <test name="AppiumTest" parallel="false">
+        <parameter name="PlatformType" value="app"/>
+        <parameter name="BrowserType" value="random value"/>
+        <classes>
+            <class name="testCase.AppiumTest"/>
+        </classes>
+    </test>
+</suite>

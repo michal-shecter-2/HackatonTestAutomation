@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="mySuite" parallel="false">
+    <listeners>
+        <listener class-name="utilities.Listener"/>
+    </listeners>
+    <test name="DBTest" parallel="false">
+        <parameter name="PlatformType" value="DB"/>
+        <parameter name="BrowserType" value=""/>
+        <classes>
+            <class name="testCase.DBTest"/>
+        </classes>
+    </test>
+</suite>

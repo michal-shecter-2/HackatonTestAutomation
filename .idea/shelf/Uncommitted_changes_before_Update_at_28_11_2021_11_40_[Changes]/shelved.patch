@@ -1,0 +1,128 @@
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\"\r\n         xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n    <modelVersion>4.0.0</modelVersion>\r\n\r\n    <groupId>org.example</groupId>\r\n    <artifactId>HackatonTestAutomation</artifactId>\r\n    <version>1.0-SNAPSHOT</version>\r\n\r\n    <properties>\r\n        <maven.compiler.source>11</maven.compiler.source>\r\n        <maven.compiler.target>11</maven.compiler.target>\r\n    </properties>\r\n\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	(revision a1c1686229cecffba77d7b1945109cc8e8ee89a4)
++++ b/pom.xml	(date 1638088432907)
+@@ -12,5 +12,62 @@
+         <maven.compiler.source>11</maven.compiler.source>
+         <maven.compiler.target>11</maven.compiler.target>
+     </properties>
++    <dependencies>
++        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
++        <dependency>
++            <groupId>org.seleniumhq.selenium</groupId>
++            <artifactId>selenium-java</artifactId>
++            <version>4.0.0</version>
++        </dependency>
++        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
++        <dependency>
++            <groupId>io.github.bonigarcia</groupId>
++            <artifactId>webdrivermanager</artifactId>
++            <version>5.0.3</version>
++        </dependency>
++        <dependency>
++            <groupId>junit</groupId>
++            <artifactId>junit</artifactId>
++            <version>RELEASE</version>
++            <scope>test</scope>
++        </dependency>
++        <dependency>
++            <groupId>io.qameta.allure</groupId>
++            <artifactId>allure-testng</artifactId>
++            <version>2.16.1</version>
++        </dependency>
++        <dependency>
++            <groupId>org.aspectj</groupId>
++            <artifactId>aspectjweaver</artifactId>
++            <version>1.9.2</version>
++        </dependency>
++        <dependency>
++            <groupId>com.opencsv</groupId>
++            <artifactId>opencsv</artifactId>
++            <version>5.5</version>
++        </dependency>
++        <dependency>
++            <groupId>com.github.stephenc.monte</groupId>
++            <artifactId>monte-screen-recorder</artifactId>
++            <version>0.7.7.0</version>
++        </dependency>
++        <dependency>
++            <groupId>org.seleniumhq.selenium</groupId>
++            <artifactId>selenium-java</artifactId>
++            <version>3.141.59</version>
++        </dependency>
+ 
++        <dependency>
++            <groupId>org.seleniumhq.selenium</groupId>
++            <artifactId>selenium-api</artifactId>
++            <version>3.141.59</version>
++            <scope>test</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>io.appium</groupId>
++            <artifactId>java-client</artifactId>
++            <version>7.2.0</version>
++        </dependency>
++    </dependencies>
+ </project>
+\ No newline at end of file
+Index: src/test/java/Selenium/Grafana.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/Selenium/Grafana.java b/src/test/java/Selenium/Grafana.java
+new file mode 100644
+--- /dev/null	(date 1638092088130)
++++ b/src/test/java/Selenium/Grafana.java	(date 1638092088130)
+@@ -0,0 +1,44 @@
++package Selenium;
++
++import io.github.bonigarcia.wdm.WebDriverManager;
++import org.junit.AfterClass;
++import org.junit.Assert;
++import org.junit.BeforeClass;
++import org.junit.Test;
++import org.openqa.selenium.By;
++import org.openqa.selenium.WebDriver;
++import org.openqa.selenium.WebElement;
++import org.openqa.selenium.chrome.ChromeDriver;
++
++import java.util.concurrent.TimeUnit;
++
++public class Grafana {
++    private static WebDriver driver;
++
++
++
++    @BeforeClass
++    public static void openBrowser() {
++        WebDriverManager.chromedriver().setup();
++        driver = new ChromeDriver();
++        driver.manage().window().maximize();
++        driver.get("http://localhost:3000");
++        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
++
++    }
++    @Test
++    public void test1(){
++      WebElement userName= driver.findElement(By.xpath("//*[@id=\"reactRoot\"]/div/main/div[3]/div/div[2]/div/div/form/div[1]/div[2]/div/div/input"));
++      WebElement password=driver.findElement(By.xpath("//*[@id=\"current-password\"]"));
++        userName.sendKeys("admin");
++        password.sendKeys("admin");
++        driver.findElement(By.xpath("//*[@id=\"reactRoot\"]/div/main/div[3]/div/div[2]/div/div/form/button")).click();
++        driver.findElement(By.xpath("//*[@id=\"reactRoot\"]/div/main/div[3]/div/div[2]/div/form/div[3]/div[2]/button/span")).click();
++        WebElement elem= driver.findElement(By.xpath("//*[@id=\"reactRoot\"]/div/main/div[3]/div/div/div[1]/div/div/div[1]/div/div/div[1]/section/div[2]/div/h1"));
++        Assert.assertEquals(elem.getText(),"Welcome to Grafana");
++    }
++    @AfterClass
++    public static void closeBrowser() {
++        driver.quit();
++    }
++}

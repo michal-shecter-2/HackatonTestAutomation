@@ -1,0 +1,1 @@
+{"uuid":"809c4f22-7e22-4bd2-888d-7ae2f15e6cd9","name":"testCase.DesktopTest.Clear","children":["2e26ad66-c817-49d6-a2e3-f0b5dec87718"],"description":"","befores":[{"name":"Clear","status":"broken","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1638371271882,"stop":1638371271882}],"afters":[],"start":1638371271882,"stop":1638371271882}
