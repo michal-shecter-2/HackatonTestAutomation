@@ -1,7 +1,11 @@
 
 # HackatonTestAutomation
 
-This project performs automated testing of various applications:
+## About the project:
+
+This project is an automation infrastructure that supports multiple platforms.
+
+## This project performs automated testing of various applications:
 
 •	Web based application
 
@@ -13,7 +17,7 @@ This project performs automated testing of various applications:
 
 •	Desktop application
 
-Applications tested:
+## Applications tested:
 
 •	Grafana - Web based application tested with WebDriver
 
@@ -27,7 +31,7 @@ Applications tested:
 
 https://play.google.com/store/apps/details?id=uk.co.jamesgrimwood.mortgageadvisor&hl=en_GB&gl=US
 
-Tools & Frameworks:
+## Tools & Frameworks:
 
 •	Listenrs interface for Logs & Customizable TestNG Reports
 
@@ -52,6 +56,9 @@ https://github.com/sbtqa/monte-media/blob/master/src/main/ru/sbtqa/monte/screenr
 https://rest-assured.io/
 
 https://digital.ai/continuous-testing/eclipse-intellij-plugins
+
+![image (48)](https://user-images.githubusercontent.com/73168263/144406085-ec4bf284-f00a-4d79-82b0-ec39319cec85.png)
+
 
 ![image (47)](https://user-images.githubusercontent.com/73168263/144319854-709747c9-77fc-49cf-b518-7478eb0b09b0.png)
 
