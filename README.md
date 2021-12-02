@@ -1,7 +1,11 @@
 
 # HackatonTestAutomation
 
-This project performs automated testing of various applications:
+## About the project:
+
+This project is an automation infrastructure that supports multiple platforms.
+
+## This project performs automated testing of various applications:
 
 •	Web based application
 
@@ -13,7 +17,7 @@ This project performs automated testing of various applications:
 
 •	Desktop application
 
-Applications tested:
+## Applications tested:
 
 •	Grafana - Web based application tested with WebDriver
 
@@ -27,7 +31,7 @@ Applications tested:
 
 https://play.google.com/store/apps/details?id=uk.co.jamesgrimwood.mortgageadvisor&hl=en_GB&gl=US
 
-Tools & Frameworks:
+## Tools & Frameworks:
 
 •	Listenrs interface for Logs & Customizable TestNG Reports
 
