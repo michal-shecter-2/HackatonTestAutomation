@@ -1,5 +1,6 @@
 package utilities;
 
+import org.testng.annotations.*;
 import pageObjects.*;
 import pageObjects.WebPage.FilteringPO;
 import pageObjects.WebPage.LoginPO;
@@ -15,12 +16,10 @@ import io.restassured.RestAssured;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterClass;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
+import workflow.DesktopFlow;
+
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -102,6 +101,11 @@ public void initWindows() throws IOException {
     windowsDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     windowsPO = PageFactory.initElements(windowsDriver, DesktopPO.class);
 }
+    @BeforeMethod
+    public void Clear() {
+        if (windowsDriver!=null)
+        DesktopFlow.clearCalc();
+    }
 @Step
     public void initElectrom() {
         System.setProperty("webdriver.chrome.driver", "D:\\Automation\\electrondriver-v3.1.2-win32-x64\\electrondriver.exe");

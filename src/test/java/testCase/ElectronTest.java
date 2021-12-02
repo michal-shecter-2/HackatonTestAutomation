@@ -1,7 +1,7 @@
 package testCase;
 
 import utilities.CommonOps;
-import workflow.Electron;
+import workflow.ElectronFlow;
 import com.google.common.util.concurrent.Uninterruptibles;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
@@ -9,15 +9,15 @@ import static org.testng.Assert.*;
 import java.util.concurrent.TimeUnit;
 
 public class ElectronTest extends CommonOps {
-    @Test()
+    @Test(priority = 1)
     public void electronTest01() {
-        Electron.inputTodo(item);
+        ElectronFlow.inputTodo(item);
         action.sendKeys(Keys.ENTER).build().perform();
         Uninterruptibles.sleepUninterruptibly(10, TimeUnit.SECONDS);
-        assertEquals(Electron.todoList(),item);
+        assertEquals(ElectronFlow.todoList(),item);
     }
-    @Test()
+    @Test(priority = 2)
     public void electronTest02() {
-        assertEquals( Electron.allCompleted(),completed);
+        assertEquals( ElectronFlow.allCompleted(),completed);
     }
 }

@@ -8,7 +8,7 @@
         <parameter name="PlatformType" value="api"/>
         <parameter name="BrowserType" value="random value"/>
         <classes>
-            <class name="testCase.GApi"/>
+            <class name="testCase.ApiTest"/>
         </classes>
     </test>
 </suite>

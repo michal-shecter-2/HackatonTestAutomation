@@ -11,12 +11,12 @@ import org.testng.annotations.Test;
 
 import java.util.HashMap;
 
-public class GApi extends CommonOps {
+public class ApiTest extends CommonOps {
 
     private ApiFlow apiFlow;
     private Verifications verifications;
 
-    public GApi()
+    public ApiTest()
     {
         apiFlow = ApiFlow.getInstance();
         verifications = Verifications.getInstance();

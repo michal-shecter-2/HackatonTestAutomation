@@ -5,39 +5,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c7f6bef-d51c-4ba7-8968-509bc11907c1" name="Changes" comment="Base">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/extensions/UIActions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/WebPage/LoginPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/WebPage/NewUserPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utilities/DDT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConnectingCreatingJavaDB/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/ConnectingCreatingJavaDB/db.lck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConnectingCreatingJavaDB/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/ConnectingCreatingJavaDB/log/log.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConnectingCreatingJavaDB/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ConnectingCreatingJavaDB/log/log1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConnectingCreatingJavaDB/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/ConnectingCreatingJavaDB/log/logmirror.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConnectingCreatingJavaDB/seg0/c400.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ConnectingCreatingJavaDB/seg0/c400.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConnectingCreatingJavaDB/seg0/c490.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ConnectingCreatingJavaDB/seg0/c490.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConnectingCreatingJavaDB/seg0/c4a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ConnectingCreatingJavaDB/seg0/c4a1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DDT.csv" beforeDir="false" afterPath="$PROJECT_DIR$/DDT.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configApi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configApi.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Appium/Appium.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Appium/Base.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Appium/appuimPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Base.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Desktop/Desktop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Electron/Electron.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Extension/AllAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Extension/ApiAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Extension/WebAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/grafanaWeb/FilteringPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/WebPage/FilteringPO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/grafanaWeb/LoginPO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/grafanaWeb/NewUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Selenium/Selenuim.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/CommoOps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/MontesScreenRecorder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Workflow/Appium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflow/Appium.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Workflow/Desktop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflow/Desktop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Workflow/Electron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflow/Electron.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Workflow/GrafanaWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflow/GrafanaWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/Api.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/DB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DevOps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EventListeners.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Selenium/Grafana.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/db/DBTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/workflow/Appium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflow/AppiumFlow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/workflow/Desktop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflow/DesktopFlow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/workflow/Electron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflow/ElectronFlow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/workflow/GrafanaWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflow/WebFlow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/AppiumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/AppiumTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/DesktopTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/DesktopTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/ElectronTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/ElectronTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/GApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/ApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/WebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/WebTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/Base.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/CommonOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/CommonOps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/workflow/Appium.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/workflow/Desktop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/workflow/Electron.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/workflow/GrafanaWeb.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-testCase.DBTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-testCase.DBTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/mySuite/ApiTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/mySuite/ApiTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/mySuite/ApiTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/mySuite/ApiTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/mySuite/DBTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/mySuite/DBTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/mySuite/DBTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/mySuite/DBTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/mySuite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/mySuite/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/mySuite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/mySuite/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/mySuite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/mySuite/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/mySuite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/mySuite/testng.xml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/mySuite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/mySuite/toc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testCase/AppiumTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCase/AppiumTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testCase/DesktopTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCase/DesktopTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testCase/ElectronTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCase/ElectronTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testCase/GApi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testCase/WebTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCase/WebTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +76,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="21XVCO7HpXdllz6X9wUqVUTR24k" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -65,7 +86,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../TestAutomation" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -83,7 +104,27 @@
       <recent name="D:\לא למחוק\Desktop\ness\Hackathon\Hackathon\src\test\java\TestCase" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.D:/Automation/ness/Hackathon/Hackathon/configDesktop.xml">
+  <component name="RunManager" selected="TestNG.D:/Automation/Hackathon/configElectron.xml">
+    <configuration name="D:/Automation/Hackathon/configApi.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Hackathon" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/configApi.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="D:/Automation/Hackathon/configElectron.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Hackathon" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/configElectron.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="D:/Automation/ness/Hackathon/Hackathon/configDesktop.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Hackathon" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/configDesktop.xml" />
@@ -97,16 +138,6 @@
     <configuration name="D:/Automation/ness/Hackathon/Hackathon/configWeb.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Hackathon" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/configWeb.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="D:/Automation/ness/Hackathon/Hackathon/src/test/configApi.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Hackathon" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/configApi.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -131,31 +162,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebTest.test1" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Hackathon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testCase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testCase" />
-      <option name="MAIN_CLASS_NAME" value="testCase.WebTest" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.D:/Automation/ness/Hackathon/Hackathon/configDesktop.xml" />
+        <item itemvalue="TestNG.D:/Automation/Hackathon/configElectron.xml" />
+        <item itemvalue="TestNG.D:/Automation/Hackathon/configApi.xml" />
         <item itemvalue="TestNG.D:/Automation/ness/Hackathon/Hackathon/configWeb.xml" />
+        <item itemvalue="TestNG.D:/Automation/ness/Hackathon/Hackathon/configDesktop.xml" />
         <item itemvalue="TestNG.WebTest" />
-        <item itemvalue="TestNG.WebTest.test1" />
-        <item itemvalue="TestNG.D:/Automation/ness/Hackathon/Hackathon/src/test/configApi.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -213,16 +226,5 @@
     <MESSAGE value="infrastructure_2" />
     <MESSAGE value="Base" />
     <option name="LAST_COMMIT_MESSAGE" value="Base" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/testCase/ElectronTest.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

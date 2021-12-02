@@ -1,6 +1,7 @@
 package workflow;
 
 import extensions.UIActions;
+import org.sikuli.script.FindFailed;
 import utilities.CommonOps;
 import com.google.common.util.concurrent.Uninterruptibles;
 import io.qameta.allure.Step;
@@ -9,7 +10,7 @@ import io.qameta.allure.Step;
 import java.util.concurrent.TimeUnit;
 
 
-public class GrafanaWeb extends CommonOps {
+public class WebFlow extends CommonOps {
 
     @Step("Synchronization")
     public static void Synchronization(int num){
@@ -18,10 +19,8 @@ public class GrafanaWeb extends CommonOps {
 
     @Step("Login")
     public static void Login(){
-//        System.out.println(name);
-//        System.out.println(password);
-        UIActions.SendKeys(login.getUsername(),"admin");
-        UIActions.SendKeys (login.getPassword(),"admin");
+        UIActions.SendKeys(login.getUsername(),textPassword_Username);
+        UIActions.SendKeys (login.getPassword(),textPassword_Username);
         UIActions.click(login.getButton());
         UIActions.click(login.getButton_skip());
     }
@@ -47,20 +46,20 @@ public class GrafanaWeb extends CommonOps {
         UIActions.SendKeys(newUser.getT_newPassword(),password);
         UIActions.click(newUser.getCreateNewUser());
     }
-//    @Step
-//    public static boolean Sikuli(){
-//            try {
-//                screen.click(serverAdmin);
-//                Thread.sleep(1000);
-//                screen.click(orgs);
-//                Thread.sleep(1000);
-//                screen.click(settings);
-//                Thread.sleep(1000);
-//                screen.click(plug);
-//                return true;
-//            } catch (FindFailed | InterruptedException e) {
-//                e.printStackTrace();
-//                return false;
-//            }
-//        }
+    @Step
+    public static boolean Sikuli(){
+            try {
+                screen.click(serverAdmin);
+                Thread.sleep(1000);
+                screen.click(orgs);
+                Thread.sleep(1000);
+                screen.click(settings);
+                Thread.sleep(1000);
+                screen.click(plug);
+                return true;
+            } catch (FindFailed | InterruptedException e) {
+                e.printStackTrace();
+                return false;
+            }
+        }
 }

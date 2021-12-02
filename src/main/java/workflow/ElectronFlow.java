@@ -4,7 +4,7 @@ import extensions.UIActions;
 import utilities.CommonOps;
 import io.qameta.allure.Step;
 
-public class Electron extends CommonOps {
+public class ElectronFlow extends CommonOps {
 
     @Step
     public static void inputTodo(String Input) {

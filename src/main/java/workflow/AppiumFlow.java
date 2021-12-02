@@ -4,7 +4,7 @@ import extensions.UIActions;
 import utilities.CommonOps;
 import io.qameta.allure.Step;
 
-public class Appium extends CommonOps {
+public class AppiumFlow extends CommonOps {
 
     @Step
     public static String sumRep() {

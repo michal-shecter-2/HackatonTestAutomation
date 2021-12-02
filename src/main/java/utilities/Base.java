@@ -1,12 +1,12 @@
 package utilities;
 
+import org.sikuli.script.Screen;
 import pageObjects.*;
 import pageObjects.WebPage.FilteringPO;
 import pageObjects.WebPage.LoginPO;
 import pageObjects.WebPage.NewUserPO;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-import io.appium.java_client.windows.WindowsDriver;
 import io.restassured.specification.RequestSpecification;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -22,7 +22,7 @@ public class Base {
 //Web
     protected static WebDriver driver;
     protected static Actions actions;
-   //protected static Screen screen;
+   protected static Screen screen;
     protected static LoginPO login;
     protected static FilteringPO filtering;
     protected static NewUserPO newUser;

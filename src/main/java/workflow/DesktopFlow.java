@@ -4,7 +4,7 @@ import extensions.UIActions;
 import utilities.CommonOps;
 import io.qameta.allure.Step;
 
-public class Desktop extends CommonOps {
+public class DesktopFlow extends CommonOps {
 @Step
     public static void clearCalc() {
     UIActions.click(windowsPO.getClear());
