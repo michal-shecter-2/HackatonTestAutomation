@@ -23,7 +23,7 @@ public class Base {
 //Web
     protected static WebDriver driver;
     protected static Actions actions;
-   protected static Screen screen;
+    protected static Screen screen;
     protected static Verifications verifications;
     protected static LoginPO login;
     protected static FilteringPO filtering;
@@ -32,10 +32,10 @@ public class Base {
     protected static String textFilter="my";
     protected static String textPassword_Username="admin";
     protected static String textFilterResult="MySQL";
-    protected static String serverAdmin = "C:\\automation\\Hackathon\\src\\sikuli\\serverAdmin.PNG";
-    protected static String orgs = "C:\\automation\\Hackathon\\src\\sikuli\\orgs.PNG";
-    protected static String settings = "C:\\automation\\Hackathon\\src\\sikuli\\settings.PNG";
-    protected static String plug = "C:\\automation\\Hackathon\\src\\sikuli\\plug.PNG";
+    protected static String serverAdmin = "D:\\Automation\\Hackathon\\sikuli\\serverAdmin.PNG";
+    protected static String orgs = "D:\\Automation\\Hackathon\\sikuli\\orgs.PNG";
+    protected static String settings = "D:\\Automation\\Hackathon\\sikuli\\settings.PNG";
+    protected static String plug = "D:\\Automation\\Hackathon\\sikuli\\plug.PNG";
 
     //Windows
     protected static WebDriver windowsDriver;
@@ -61,7 +61,6 @@ public class Base {
     protected static DB db;
 
     //Electron
-    //main base
     protected static ElectronPO ElctronPO;
     protected static  Actions action;
     protected static  WebDriver ElectronDriver;

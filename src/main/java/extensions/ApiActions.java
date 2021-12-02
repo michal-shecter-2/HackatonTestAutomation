@@ -7,18 +7,9 @@ import java.util.HashMap;
 
 public class ApiActions extends CommonOps {
 
-    private static ApiActions apiActions;
-    public static ApiActions getInstance()
-    {
-        if (apiActions == null)
-            apiActions = new ApiActions();
-        return apiActions;
-    }
-    private ApiActions(){}
-
 
     @Step("sends a get request")
-    public int get(String apiLink)
+    public static int get(String apiLink)
     {
         response = request.get(apiLink);
         response.prettyPrint();
@@ -26,7 +17,7 @@ public class ApiActions extends CommonOps {
     }
 
     @Step("send a post request")
-    public int post(String apiLink, HashMap<String,String>map)
+    public static int post(String apiLink, HashMap<String,String>map)
     {
         if (map.isEmpty())
             return -1;
@@ -39,21 +30,21 @@ public class ApiActions extends CommonOps {
     }
 
     @Step("sends a delete request")
-    public int delete(String apiLink)
+    public static int delete(String apiLink)
     {
         response = request.delete(apiLink);
         return response.getStatusCode();
     }
 
     @Step("set headers for request")
-    public void setHeaders()
+    public static void setHeaders()
     {
         request.headers("Accept","application/json");
         request.headers("Content-Type", "application/json");
         request.headers("Authorization","Bearer " + adminApiKey);
     }
 
-    public String getNewAdminID()
+    public static String getNewAdminID()
     {
         return newAdminID;
     }

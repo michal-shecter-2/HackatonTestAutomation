@@ -18,19 +18,19 @@ public class DBActions extends CommonOps {
 
     }
 
-    public String getRow(String rowNum)
+    public static String getRow(String rowNum)
     {
         String query = "select id,name,responseCode,responseMessage from " + db.getTableName() + " where id = " + rowNum;
         return db.getRowData(query);
     }
 
-    public String getCell(String rowNum,String colNum)
+    public static String getCell(String rowNum,String colNum)
     {
         String query = "select id,name,responseCode,responseMessage from " + db.getTableName() + " where id = " + rowNum;
         return db.getColumnData(query,colNum);
     }
 
-    public void close()
+    public static void closeDB()
     {
         db.close();
     }

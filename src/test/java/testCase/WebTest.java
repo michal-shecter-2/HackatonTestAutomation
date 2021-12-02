@@ -9,10 +9,6 @@ import org.junit.Assert;
 import org.testng.annotations.Test;
 public class WebTest extends CommonOps {
 
-    public WebTest() {
-        verifications = Verifications.getInstance();
-    }
-
     @Test(priority = 1)
     @Description("Login")
     public void test1_Login(){

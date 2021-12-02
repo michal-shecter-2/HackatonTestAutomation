@@ -10,40 +10,44 @@ public class Listener  implements ITestListener {
 
     @Override
     public void onTestStart(ITestResult result) {
-
-        try {
-            MonteScreenRecorder.startRecord(result.getMethod().getMethodName());
-        }
-        catch (Exception e) {
-            e.printStackTrace();
+        if (Base.windowsDriver != null || Base.appuimDriver != null || Base.ElectronDriver != null) {
+            try {
+                MonteScreenRecorder.startRecord(result.getMethod().getMethodName());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
-        try {
-            MonteScreenRecorder.stopRecord();
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-        }
-        File file = new File("./test-recordings/" + result.getName() + ".avi");
-        if(file.delete()) {
-            System.out.println("Recorded Screen Cast File Deleted Successfully");
-        }
-        else {
-            System.out.println("Failed to Delete the Recorded Screen Cast File");
+        if (Base.windowsDriver != null || Base.appuimDriver != null || Base.ElectronDriver != null) {
+            try {
+                MonteScreenRecorder.stopRecord();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            File file = new File("./test-recordings/" + result.getName() + ".avi");
+            if (file.delete()) {
+                System.out.println("Recorded Screen Cast File Deleted Successfully");
+            } else {
+                System.out.println("Failed to Delete the Recorded Screen Cast File");
+            }
         }
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
-        try {
-            MonteScreenRecorder.stopRecord();
-        } catch (Exception e) {
-            e.printStackTrace();
+        if (Base.windowsDriver != null || Base.appuimDriver != null || Base.ElectronDriver != null) {
+
+            try {
+                MonteScreenRecorder.stopRecord();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
+
 
     @Override
     public void onTestSkipped(ITestResult result) {

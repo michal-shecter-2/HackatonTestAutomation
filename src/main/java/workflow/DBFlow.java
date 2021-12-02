@@ -3,31 +3,29 @@ package workflow;
 import extensions.DBActions;
 import io.qameta.allure.Step;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class DBFlow {
 
-    private DBActions dbActions;
-    private static DBFlow dbFlow;
-    public static DBFlow getInstance()
-    {
-        if (dbFlow == null)
-            dbFlow = new DBFlow();
-        return dbFlow;
-    }
-
-    private DBFlow()
-    {
-        dbActions = DBActions.getInstance();
-    }
-
     @Step("returns the data in the cell at coordinates (row,col)")
-    public String getCellData(String row,String col)
+    public static String getCellData(String row,String col)
     {
-        return dbActions.getCell(row,col);
+        return DBActions.getCell(row,col);
     }
 
     @Step("Closes the connection")
-    public void close()
+    public static void close()
     {
-        dbActions.close();
+        DBActions.closeDB();
+    }
+
+    public static List<String> getTestParams()
+    {
+        List<String> actual = new ArrayList<>();
+        actual.add(getCellData("2","responseCode"));
+        actual.add(getCellData("2","responseMessage"));
+        actual.add(getCellData("3","responseMessage"));
+        return actual;
     }
 }

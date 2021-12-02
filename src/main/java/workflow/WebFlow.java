@@ -50,14 +50,14 @@ public class WebFlow extends CommonOps {
     public static boolean Sikuli(){
             try {
                 screen.click(serverAdmin);
-                Thread.sleep(1000);
+                Synchronization(1);
                 screen.click(orgs);
-                Thread.sleep(1000);
+                Synchronization(1);
                 screen.click(settings);
-                Thread.sleep(1000);
+                Synchronization(1);
                 screen.click(plug);
                 return true;
-            } catch (FindFailed | InterruptedException e) {
+            } catch (FindFailed e) {
                 e.printStackTrace();
                 return false;
             }

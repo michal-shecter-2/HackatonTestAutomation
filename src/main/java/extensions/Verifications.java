@@ -10,26 +10,13 @@ import java.util.List;
 
 public class Verifications extends CommonOps {
 
-    private static Verifications verifications;
-
-    public static Verifications getInstance()
-    {
-        if (verifications == null)
-            verifications = new Verifications();
-        return verifications;
-    }
-    private Verifications()
-    {
-
-    }
-
     @Step("verifies int value")
-    public void verifyInt(int actual,int expected)
+    public static void verifyInt(int actual,int expected)
     {
         Assert.assertEquals(actual,expected);
     }
 
-    public void verifyStrings(List<String> actual,List<String>expected)
+    public static void verifyStrings(List<String> actual,List<String>expected)
     {
         if (actual.size()!=expected.size())
             Assert.fail("lists sizes don't match");
