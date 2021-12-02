@@ -1,5 +1,6 @@
 package utilities;
 import io.qameta.allure.Description;
+import org.sikuli.script.Screen;
 import org.testng.annotations.*;
 import pageObjects.*;
 import pageObjects.WebPage.FilteringPO;
@@ -122,7 +123,7 @@ public class CommonOps extends Base {
         driver.get(urlApi);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
          actions=new Actions(driver);
-        // screen = new Screen();
+         screen = new Screen();
         login = PageFactory.initElements(driver, LoginPO.class);
         filtering = PageFactory.initElements(driver, FilteringPO.class);
         newUser = PageFactory.initElements(driver, NewUserPO.class);

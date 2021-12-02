@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-mySuite">
-              <span class="suite-name border-passed">mySuite</span>
+              <span class="suite-name border-failed">mySuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-mySuite" class="hide-methods failed suite-mySuite"> (hide)</a> <!-- hide-methods failed suite-mySuite -->
+                      <a href="#" panel-name="suite-mySuite" class="show-methods failed suite-mySuite"> (show)</a> <!-- show-methods failed suite-mySuite -->
+                    </span>
+                    <div class="method-list-content failed suite-mySuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-mySuite" title="testCase.WebTest" hash-for-method="test4">test4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-mySuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,11 +129,6 @@
                         <a href="#" class="method navigator-link" panel-name="suite-mySuite" title="testCase.WebTest" hash-for-method="test3_newUser(aaaa, michal13951@gmail.com, bbbbbb, o888525212)">test3_newUser(aaaa, michal13951@gmail.com, bbbbbb, o888525212)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-mySuite" title="testCase.WebTest" hash-for-method="test4">test4</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-mySuite -->
                   </li>
                 </ul>
@@ -132,6 +141,27 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-mySuite" class="panel mySuite">
+          <div class="suite-mySuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCase.WebTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test4">
+                  </a> <!-- test4 -->
+                  <span class="method-name">test4</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at workflow.WebFlow.Sikuli(WebFlow.java:52)
+	at testCase.WebTest.test4(WebTest.java:38)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-mySuite-class-failed -->
           <div class="suite-mySuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -158,13 +188,6 @@
                   </a> <!-- test3_newUser(aaaa, michal13951@gmail.com, bbbbbb, o888525212) -->
                   <span class="method-name">test3_newUser</span>
                   <span class="parameters">(aaaa, michal13951@gmail.com, bbbbbb, o888525212)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test4">
-                  </a> <!-- test4 -->
-                  <span class="method-name">test4</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -228,26 +251,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test4')
+data.setCell(0, 1, 'test2_filter')
 data.setCell(0, 2, 'testCase.WebTest')
-data.setCell(0, 3, 6099);
+data.setCell(0, 3, 5507);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test2_filter')
+data.setCell(1, 1, 'test3_newUser')
 data.setCell(1, 2, 'testCase.WebTest')
-data.setCell(1, 3, 5531);
+data.setCell(1, 3, 3733);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'test3_newUser')
+data.setCell(2, 1, 'test1_Login')
 data.setCell(2, 2, 'testCase.WebTest')
-data.setCell(2, 3, 3801);
+data.setCell(2, 3, 1103);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'test1_Login')
+data.setCell(3, 1, 'test4')
 data.setCell(3, 2, 'testCase.WebTest')
-data.setCell(3, 3, 1719);
+data.setCell(3, 3, 10);
 window.suiteTableData['mySuite']= { tableData: data, tableDiv: 'times-div-mySuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 17 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-mySuite">
               </div> <!-- times-div-mySuite -->
             </div> <!-- times-div -->
@@ -280,59 +303,61 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">Clear</span>
-                <span class="method-start">5288 ms</span>
+                <span class="method-start">3735 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test1_Login</span>
-                <span class="method-start">5412 ms</span>
+                <span class="method-start">3891 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7140 ms</span>
+                <span class="method-start">5006 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Clear</span>
-                <span class="method-start">7143 ms</span>
+                <span class="method-start">5010 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test2_filter</span>
-                <span class="method-start">7144 ms</span>
+                <span class="method-start">5011 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">12678 ms</span>
+                <span class="method-start">10521 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Clear</span>
-                <span class="method-start">12711 ms</span>
+                <span class="method-start">10544 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test3_newUser(aaaa, michal13951@gmail.com, bbbbbb, o888525212)</span>
-                <span class="method-start">12713 ms</span>
+                <span class="method-start">10546 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16517 ms</span>
+                <span class="method-start">14282 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Clear</span>
-                <span class="method-start">16518 ms</span>
+                <span class="method-start">14283 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">test4</span>
-                <span class="method-start">16519 ms</span>
+                <span class="method-start">14284 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">22620 ms</span>
+                <span class="method-start">14302 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">close</span>
-                <span class="method-start">22621 ms</span>
+                <span class="method-start">14303 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">22622 ms</span>
+                <span class="method-start">14304 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
