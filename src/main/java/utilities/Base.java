@@ -44,24 +44,21 @@ public class Base {
     protected static String calcApp = "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App";
 
     //Appium
-    protected  SoftAssert softAssertion = new SoftAssert();
     protected static AppuimPO appuimPO;
-    protected static String reportDirectory = "reports";
-    protected static  String reportFormat = "xml";
-    protected static String testName = "appuim";
     protected static AndroidDriver<AndroidElement> appuimDriver = null;
     protected static DesiredCapabilities dc = new DesiredCapabilities();
+    protected static String url="http://localhost:4723";
+    protected static String app="com.shivgadhia.android.ukMortgageCalc";
 
     //api
     protected static RequestSpecification request;
- protected static Response response;
- protected static String newAdminID;
- protected static JsonPath jsonPath;
- protected static JSONObject params;
- protected static final String adminApiKey = "eyJrIjoiOHozWlpFaUdrYXdnak0ybDNDMDhtdzM4bmp1RXEzcTUiLCJuIjoiQVBJS2V5IiwiaWQiOjF9";
- //db
- protected static DB db;
-
+    protected static Response response;
+    protected static String urlApi = "http://localhost:3000";
+    protected static String newAdminID;
+    protected static JsonPath jsonPath;
+    protected static final String adminApiKey = "eyJrIjoiOHozWlpFaUdrYXdnak0ybDNDMDhtdzM4bmp1RXEzcTUiLCJuIjoiQVBJS2V5IiwiaWQiOjF9";
+    //db
+    protected static DB db;
 
     //Electron
     //main base
@@ -72,5 +69,7 @@ public class Base {
     protected static  DesiredCapabilities ElctronCapabilities;
     protected static  String item= "test01";
     protected static  String completed= "Toggle all completed";
+    protected static  String electronExe = "C:\\Hackathon\\electron\\electrondriver.exe";
+    protected static  String electronApp="C:\\Users\\bechor\\AppData\\Local\\Programs\\todolist\\Todolist.exe";
 
 }

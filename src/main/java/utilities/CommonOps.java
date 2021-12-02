@@ -1,5 +1,5 @@
 package utilities;
-
+import io.qameta.allure.Description;
 import org.testng.annotations.*;
 import pageObjects.*;
 import pageObjects.WebPage.FilteringPO;
@@ -19,7 +19,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 import workflow.DesktopFlow;
-
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -36,14 +35,7 @@ public class CommonOps extends Base {
             initDB();
         else if(platform.equals("web"))
         {
-            if(browser.equals("ch"))
-            {
-                initWeb();
-            }
-            else if (browser.equals("ff"))
-            {
-                //opens firefox
-            }
+            initWeb();
         }
         else if(platform.equals("app"))
             try {
@@ -53,38 +45,35 @@ public class CommonOps extends Base {
                     e.printStackTrace();
                 }
         else if (platform.equals("el"))
-            initElectrom();
+                    initElectrom();
         else if (platform.equals("de"))
-                        try {
+            try {
                     initWindows();
                 }
                catch (IOException e){
                     e.printStackTrace();
             }
     }
-
+    @Step("Init api")
     protected void initApi()
     {
-        RestAssured.baseURI = "http://localhost:3000";
+        RestAssured.baseURI = urlApi;
         request = RestAssured.given();
         request.header("Content-Type","application/json");
     }
-
+    @Step("Init db")
     public void initDB()
     {
         db = DB.getInstance();
     }
 
-@Step
+    @Step("Init appium driver")
     public void initAppuim() throws MalformedURLException {
-        dc.setCapability("reportDirectory", reportDirectory);
-        dc.setCapability("reportFormat", reportFormat);
-        dc.setCapability("testName", testName);
         dc.setCapability(MobileCapabilityType.UDID, "12541cf8");
-        dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.shivgadhia.android.ukMortgageCalc");
-        dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".MainActivity");
-        appuimDriver = new AndroidDriver<>(new URL("http://localhost:4723/wd/hub"), dc);
-        appuimPO = PageFactory.initElements(appuimDriver, AppuimPO.class);
+    dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, app);
+    dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".MainActivity");
+    appuimDriver = new AndroidDriver<>(new URL(url+"/wd/hub"), dc);
+    appuimPO = PageFactory.initElements(appuimDriver, AppuimPO.class);
     }
 
     @AfterMethod
@@ -93,12 +82,11 @@ public class CommonOps extends Base {
         appuimDriver.quit();
     }
 
-@Step
-public void initWindows() throws IOException {
+    @Step("Init windows driver")
+    public void initWindows() throws IOException {
     capabilities = new DesiredCapabilities();
     capabilities.setCapability("app", calcApp);
-    windowsDriver = new WindowsDriver(new URL("http://127.0.0.1:4723"), capabilities);
-    windowsDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    windowsDriver = new WindowsDriver<>(new URL(url), capabilities);
     windowsPO = PageFactory.initElements(windowsDriver, DesktopPO.class);
 }
     @BeforeMethod
@@ -112,27 +100,26 @@ public void initWindows() throws IOException {
             windowsDriver.quit();
     }
 
-@Step
+    @Step("Init electron driver")
     public void initElectrom() {
-        System.setProperty("webdriver.chrome.driver", "D:\\Automation\\electrondriver-v3.1.2-win32-x64\\electrondriver.exe");
-        opt = new ChromeOptions();
-        opt.setBinary("C:\\Users\\User\\AppData\\Local\\Programs\\todolist\\Todolist.exe");
-        ElctronCapabilities = new DesiredCapabilities();
-        ElctronCapabilities.setCapability("chromeOptions", opt);
-        ElctronCapabilities.setBrowserName("chrome");
-        driver=new ChromeDriver(ElctronCapabilities);
-       // opt.merge(ElctronCapabilities);
-        ElectronDriver = new ChromeDriver(opt);
-        action = new Actions(ElectronDriver);
-        Uninterruptibles.sleepUninterruptibly(10, TimeUnit.SECONDS);
-        ElctronPO = PageFactory.initElements(ElectronDriver, ElectronPO.class);
+    System.setProperty("webdriver.chrome.driver", electronExe);
+    opt = new ChromeOptions();
+    opt.setBinary(electronApp);
+    ElctronCapabilities = new DesiredCapabilities();
+    ElctronCapabilities.setCapability("chromeOptions", opt);
+    ElctronCapabilities.setBrowserName("chrome");
+    opt.merge(ElctronCapabilities);
+    ElectronDriver = new ChromeDriver(opt);
+    action = new Actions(ElectronDriver);
+    Uninterruptibles.sleepUninterruptibly(10, TimeUnit.SECONDS);
+    ElctronPO = PageFactory.initElements(ElectronDriver, ElectronPO.class);
     }
-    @Step
+    @Step("Init web driver")
     private  void initWeb() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("http://localhost:3000");
+        driver.get(urlApi);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
          actions=new Actions(driver);
         // screen = new Screen();
