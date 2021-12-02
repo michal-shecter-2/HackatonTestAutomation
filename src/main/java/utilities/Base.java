@@ -1,5 +1,6 @@
 package utilities;
 
+import extensions.Verifications;
 import org.sikuli.script.Screen;
 import pageObjects.*;
 import pageObjects.WebPage.FilteringPO;
@@ -23,6 +24,7 @@ public class Base {
     protected static WebDriver driver;
     protected static Actions actions;
    protected static Screen screen;
+    protected static Verifications verifications;
     protected static LoginPO login;
     protected static FilteringPO filtering;
     protected static NewUserPO newUser;

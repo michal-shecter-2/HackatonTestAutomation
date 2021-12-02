@@ -106,6 +106,12 @@ public void initWindows() throws IOException {
         if (windowsDriver!=null)
         DesktopFlow.clearCalc();
     }
+    @AfterClass
+    public void close(){
+        if (windowsDriver!=null)
+            windowsDriver.quit();
+    }
+
 @Step
     public void initElectrom() {
         System.setProperty("webdriver.chrome.driver", "D:\\Automation\\electrondriver-v3.1.2-win32-x64\\electrondriver.exe");

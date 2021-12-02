@@ -1,11 +1,17 @@
 package testCase;
 
+import extensions.UIActions;
+import extensions.Verifications;
 import io.qameta.allure.Description;
 import utilities.CommonOps;
 import workflow.WebFlow;
 import org.junit.Assert;
 import org.testng.annotations.Test;
 public class WebTest extends CommonOps {
+
+    public WebTest() {
+        verifications = Verifications.getInstance();
+    }
 
     @Test(priority = 1)
     @Description("Login")
@@ -19,7 +25,7 @@ public class WebTest extends CommonOps {
         WebFlow.Synchronization(5);
         actions.moveToElement(filtering.getDefinitions());
         WebFlow.Filter();
-        Assert.assertEquals(filtering.getSpanMySQL().getText(),textFilterResult);
+        Verifications.verifyText((UIActions.getText(filtering.getSpanMySQL())),textFilterResult);
     }
     @Test(priority = 3,dataProviderClass = utilities.DDT.class,dataProvider="data-provider",dependsOnMethods = "test1_Login")
     @Description("Create a new user")
@@ -27,7 +33,7 @@ public class WebTest extends CommonOps {
         actions.moveToElement(newUser.getButton_ServerAdmin());
         WebFlow.NewUser(userName,email,newName,password);
         WebFlow.Synchronization(3);
-       Assert.assertTrue(newUser.getCheckUsers().isDisplayed());
+        Verifications.verifyDisplayed(newUser.getCheckUsers());
 }
 
 @Test(priority = 4, dependsOnMethods = "test1_Login")
