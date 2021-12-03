@@ -19,8 +19,8 @@ public class WebFlow extends CommonOps {
 
     @Step("Login")
     public static void Login(){
-        UIActions.SendKeys(login.getUsername(),textPassword_Username);
-        UIActions.SendKeys (login.getPassword(),textPassword_Username);
+        UIActions.SendKeys(login.getUsername(),getExternalData("textPassword_Username"));
+        UIActions.SendKeys (login.getPassword(),getExternalData("textPassword_Username"));
         UIActions.click(login.getButton());
         UIActions.click(login.getButton_skip());
     }
@@ -30,7 +30,7 @@ public class WebFlow extends CommonOps {
         UIActions.click(filtering.getDefinitions());
         UIActions.click(filtering.getAddData());
         UIActions.click( filtering.getFilter());
-        UIActions.SendKeys(filtering.getFilter(),textFilter);
+        UIActions.SendKeys(filtering.getFilter(),getExternalData("textFilter"));
     }
     @Step
     public static void NewUser(String userName,String email,String newName,String password){
@@ -49,13 +49,13 @@ public class WebFlow extends CommonOps {
     @Step
     public static boolean Sikuli(){
             try {
-                screen.click(serverAdmin);
+                screen.click(getExternalData("serverAdmin"));
                 Synchronization(1);
-                screen.click(orgs);
+                screen.click(getExternalData("orgs"));
                 Synchronization(1);
-                screen.click(settings);
+                screen.click(getExternalData("settings"));
                 Synchronization(1);
-                screen.click(plug);
+                screen.click(getExternalData("plug"));
                 return true;
             } catch (FindFailed e) {
                 e.printStackTrace();

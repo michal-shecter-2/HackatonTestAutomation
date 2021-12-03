@@ -7,12 +7,12 @@ import java.io.FileReader;
 import java.util.Iterator;
 import java.util.List;
 
-public class DDT {
+public class DDT extends CommonOps{
     private static Object[][] data = null;
 
     @DataProvider(name = "data-provider")
     public static Object[][] createData() {
-        getFromCsvData("D:\\Automation\\ness\\Hackathon\\Hackathon\\DDT.csv");
+        getFromCsvData(getExternalData("DDT"));
         return data;
     }
 

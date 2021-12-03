@@ -41,7 +41,7 @@ public class ApiActions extends CommonOps {
     {
         request.headers("Accept","application/json");
         request.headers("Content-Type", "application/json");
-        request.headers("Authorization","Bearer " + adminApiKey);
+        request.headers("Authorization","Bearer " + getExternalData("adminApiKey"));
     }
 
     public static String getNewAdminID()

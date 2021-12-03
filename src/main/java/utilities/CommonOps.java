@@ -2,6 +2,7 @@ package utilities;
 import io.qameta.allure.Description;
 import org.sikuli.script.Screen;
 import org.testng.annotations.*;
+import org.w3c.dom.Document;
 import pageObjects.*;
 import pageObjects.WebPage.FilteringPO;
 import pageObjects.WebPage.LoginPO;
@@ -20,6 +21,10 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 import workflow.DesktopFlow;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -58,7 +63,7 @@ public class CommonOps extends Base {
     @Step("Init api")
     protected void initApi()
     {
-        RestAssured.baseURI = urlApi;
+        RestAssured.baseURI = getExternalData("urlApi");
         request = RestAssured.given();
         request.header("Content-Type","application/json");
     }
@@ -71,9 +76,9 @@ public class CommonOps extends Base {
     @Step("Init appium driver")
     public void initAppuim() throws MalformedURLException {
         dc.setCapability(MobileCapabilityType.UDID, "12541cf8");
-    dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, app);
+    dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, getExternalData("app"));
     dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".MainActivity");
-    appuimDriver = new AndroidDriver<>(new URL(url+"/wd/hub"), dc);
+    appuimDriver = new AndroidDriver<>(new URL(getExternalData("urlA")), dc);
     appuimPO = PageFactory.initElements(appuimDriver, AppuimPO.class);
     }
 
@@ -86,8 +91,8 @@ public class CommonOps extends Base {
     @Step("Init windows driver")
     public void initWindows() throws IOException {
     capabilities = new DesiredCapabilities();
-    capabilities.setCapability("app", calcApp);
-    windowsDriver = new WindowsDriver<>(new URL(url), capabilities);
+    capabilities.setCapability("app", getExternalData("calcApp"));
+    windowsDriver = new WindowsDriver<>(new URL(getExternalData("urlW")), capabilities);
     windowsPO = PageFactory.initElements(windowsDriver, DesktopPO.class);
 }
     @BeforeMethod
@@ -103,9 +108,9 @@ public class CommonOps extends Base {
 
     @Step("Init electron driver")
     public void initElectrom() {
-    System.setProperty("webdriver.chrome.driver", electronExe);
+    System.setProperty("webdriver.chrome.driver", getExternalData("electronExe"));
     opt = new ChromeOptions();
-    opt.setBinary(electronApp);
+    opt.setBinary(getExternalData("electronApp"));
     ElctronCapabilities = new DesiredCapabilities();
     ElctronCapabilities.setCapability("chromeOptions", opt);
     ElctronCapabilities.setBrowserName("chrome");
@@ -120,7 +125,7 @@ public class CommonOps extends Base {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get(urlApi);
+        driver.get(getExternalData("urlApi"));
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
          actions=new Actions(driver);
          screen = new Screen();
@@ -133,5 +138,23 @@ public class CommonOps extends Base {
     public static void closeBrowser() {
         if(driver!=null)
         driver.quit();
+    }
+    public static String getExternalData(String nodeName)
+    {
+        DocumentBuilder documentBuilder;
+        Document doc = null;
+        File xmlFile = new File("C:\\HackatonTestAutomation\\src\\main\\java\\ExternalData.xml");
+        DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
+        try{
+            documentBuilder = documentBuilderFactory.newDocumentBuilder();
+            doc = documentBuilder.parse(xmlFile);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        if(doc!=null) {
+            doc.getDocumentElement().normalize();
+            return doc.getElementsByTagName(nodeName).item(0).getTextContent();
+        }
+        else return null;
     }
 }

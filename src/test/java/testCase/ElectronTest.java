@@ -15,14 +15,14 @@ public class ElectronTest extends CommonOps {
     @Test (description = "electronTest01", priority = 1)
     @Description("Verify todo list")
     public void electronTest01() {
-        ElectronFlow.inputTodo(item);
+        ElectronFlow.inputTodo(getExternalData("item"));
         UIActions.send();
-        Verifications.verifyText(ElectronFlow.todoList(),item);
+        Verifications.verifyText(ElectronFlow.todoList(),getExternalData("item"));
 
     }
     @Test (description = "electronTest02", priority = 2,dependsOnMethods = {"electronTest01"})
     @Description("Verify Toggle all completed")
     public void electronTest02() {
-        Verifications.verifyText(ElectronFlow.allCompleted(),completed);
+        Verifications.verifyText(ElectronFlow.allCompleted(),getExternalData("completed"));
     }
 }

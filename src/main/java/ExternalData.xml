@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Environment>
+    <Environment>PC</Environment>
+    <calcApp>Microsoft.WindowsCalculator_8wekyb3d8bbwe!App</calcApp>
+    <serverAdmin>D:\Automation\Hackathon\sikuli\serverAdmin.PNG</serverAdmin>
+    <orgs>D:\Automation\Hackathon\sikuli\orgs.PNG</orgs>
+    <settings>D:\Automation\Hackathon\sikuli\settings.PNG</settings>
+    <plug>D:\Automation\Hackathon\sikuli\plug.PNG</plug>
+    <textWelcome>Welcome to Grafana</textWelcome>
+    <textFilter>my</textFilter>
+    <textPassword_Username>admin</textPassword_Username>
+    <textFilterResult>MySQL</textFilterResult>
+    <urlA>http://localhost:4723/wd/hub</urlA>
+    <urlW>http://localhost:4723</urlW>
+    <app>com.shivgadhia.android.ukMortgageCalc</app>
+    <urlApi>http://localhost:3000</urlApi>
+    <adminApiKey>eyJrIjoiOHozWlpFaUdrYXdnak0ybDNDMDhtdzM4bmp1RXEzcTUiLCJuIjoiQVBJS2V5IiwiaWQiOjF9</adminApiKey>
+    <item>test01</item>
+    <completed>Toggle all completed</completed>
+    <electronExe>C:\Hackathon\electron\electrondriver.exe</electronExe>
+    <electronApp>C:\Users\bechor\AppData\Local\Programs\todolist\Todolist.exe</electronApp>
+    <DDT>C:\HackatonTestAutomation\DDT.csv</DDT>
+</Environment>

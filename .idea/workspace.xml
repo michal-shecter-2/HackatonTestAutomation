@@ -4,28 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c7f6bef-d51c-4ba7-8968-509bc11907c1" name="Changes" comment="Update_3">
+    <list default="true" id="5c7f6bef-d51c-4ba7-8968-509bc11907c1" name="Changes" comment="Update">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ExternalData.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_11_2021_11_40__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_11_2021_11_40__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_11_2021_12_01__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_11_2021_12_01__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_11_2021_15_01__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_11_2021_15_01__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HackatonTestAutomation" beforeDir="false" afterPath="$PROJECT_DIR$/HackatonTestAutomation" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/extensions/UIActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/extensions/UIActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/AppuimPO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/AppuimPO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/DesktopPO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/DesktopPO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/ElectronPO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/ElectronPO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/extensions/ApiActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extensions/ApiActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/DDT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/DDT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/workflow/WebFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflow/WebFlow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/ElectronTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/ElectronTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testCase/WebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCase/WebTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/extensions/ApiActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/extensions/ApiActions.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/utilities/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/Base.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/utilities/CommonOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/CommonOps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/mySuite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/mySuite/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/mySuite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/mySuite/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/mySuite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/mySuite/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/mySuite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/mySuite/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCase/AppiumTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCase/AppiumTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCase/DesktopTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCase/DesktopTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/DDT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/DDT.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/Listener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/testCase/ElectronTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCase/ElectronTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testCase/WebTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testCase/WebTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +35,12 @@
       <list>
         <option value="AnnotationType" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="ROOT_SYNC" value="SYNC" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="21XVCO7HpXdllz6X9wUqVUTR24k" />
@@ -74,7 +72,17 @@
       <recent name="D:\לא למחוק\Desktop\ness\Hackathon\Hackathon\src\test\java\TestCase" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.D:/Automation/ness/Hackathon/Hackathon/configWeb.xml">
+  <component name="RunManager" selected="TestNG.C:/HackatonTestAutomation/configWeb.xml">
+    <configuration name="C:/HackatonTestAutomation/configWeb.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HackatonTestAutomation" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/configWeb.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="D:/Automation/Hackathon/configApi.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Hackathon" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/configApi.xml" />
@@ -115,30 +123,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Hackathon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testCase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testCase" />
-      <option name="MAIN_CLASS_NAME" value="testCase.WebTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.D:/Automation/ness/Hackathon/Hackathon/configWeb.xml" />
+        <item itemvalue="TestNG.C:/HackatonTestAutomation/configWeb.xml" />
         <item itemvalue="TestNG.D:/Automation/Hackathon/configElectron.xml" />
         <item itemvalue="TestNG.D:/Automation/Hackathon/configApi.xml" />
+        <item itemvalue="TestNG.D:/Automation/ness/Hackathon/Hackathon/configWeb.xml" />
         <item itemvalue="TestNG.D:/Automation/ness/Hackathon/Hackathon/configDesktop.xml" />
-        <item itemvalue="TestNG.WebTest" />
       </list>
     </recent_temporary>
   </component>
@@ -182,31 +173,47 @@
       <option name="project" value="LOCAL" />
       <updated>1638403932949</updated>
     </task>
-    <task id="LOCAL-00006" summary="Update_2">
-      <created>1638408140181</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1638408140181</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Update_3">
-      <created>1638459612361</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1638459612361</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="7e83d43c-5ffc-441f-a260-2f799f2bd359">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/HackatonTestAutomation/src/main/java/pageObjects" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
           </value>
         </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="7e83d43c-5ffc-441f-a260-2f799f2bd359" value="TOOL_WINDOW" />
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
@@ -217,8 +224,6 @@
     <MESSAGE value="infrastructure_2" />
     <MESSAGE value="Base" />
     <MESSAGE value="Update" />
-    <MESSAGE value="Update_2" />
-    <MESSAGE value="Update_3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update_3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
 </project>

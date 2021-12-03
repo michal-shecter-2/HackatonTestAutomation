@@ -13,7 +13,7 @@ public class WebTest extends CommonOps {
     @Description("Login")
     public void test1_Login(){
         WebFlow.Login();
-        Assert.assertEquals(login.getAssert_login().getText(), textWelcome);
+        Assert.assertEquals(login.getAssert_login().getText(), getExternalData("textWelcome"));
     }
     @Test(priority = 2,dependsOnMethods = "test1_Login")
     @Description("Filter the data base record")
@@ -21,7 +21,7 @@ public class WebTest extends CommonOps {
         WebFlow.Synchronization(5);
         actions.moveToElement(filtering.getDefinitions());
         WebFlow.Filter();
-        Verifications.verifyText((UIActions.getText(filtering.getSpanMySQL())),textFilterResult);
+        Verifications.verifyText((UIActions.getText(filtering.getSpanMySQL())),getExternalData("textFilterResult"));
     }
     @Test(priority = 3,dataProviderClass = utilities.DDT.class,dataProvider="data-provider",dependsOnMethods = "test1_Login")
     @Description("Create a new user")
